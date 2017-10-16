@@ -1,0 +1,13 @@
+div#container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form#form-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: C5C7D1;
+}
+
