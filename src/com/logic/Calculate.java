@@ -13,17 +13,17 @@ import javax.servlet.http.HttpServletResponse;
 import com.logic.Expression.ExpressionException;
 
 /**
- * Servlet implementation class AddNumbers
+ * Servlet implementation class Calculate
  */
-@WebServlet("/AddNumbers")
-public class AddNumbers extends HttpServlet
+@WebServlet("/Calculate")
+public class Calculate extends HttpServlet
 {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public AddNumbers()
+	public Calculate()
 	{
 		super();
 		// TODO Auto-generated constructor stub
@@ -46,6 +46,7 @@ public class AddNumbers extends HttpServlet
 	{
 		String input = request.getParameter("expression");
 		Expression expression = new Expression(input);
+		expression.setPrecision(50);
 		BigDecimal result = BigDecimal.ZERO;
 		response.setContentType("text/html");
 		RequestDispatcher requestDispatcher = request.getRequestDispatcher("index.jsp");

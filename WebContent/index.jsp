@@ -8,7 +8,7 @@
 </head>
 <body>
 	<div id='container'>
-		<form id='form-input' name=fr_add method=post action="AddNumbers">
+		<form id='form-input' name=fr_add method=post action="Calculate">
 			<h2>Welcome!</h2>
 			<input type='text' id='expression' name='expression'
 				placeholder='Write your expressions' required='required' /> <input
@@ -31,8 +31,9 @@
 		</c:choose>
 	</div>
 
-	<div id="table-container">
-		<table style="width: 100%">
+	<div class="tables-container">
+		<h2>Supported Functions And Operators:</h2>
+		<table border="1">
 			<tr>
 				<th>Operator</th>
 				<th>Meaning</th>
@@ -83,6 +84,76 @@
 			<tr>
 				<td>csc(x)</td>
 				<td>Cosecant of x</td>
+			</tr>
+			<tr>
+				<td>asin(x), acos(x), atan(x)</td>
+				<td>Reversed trigonometric functions</td>
+			</tr>
+			<tr>
+				<td>sinh(x), cosh(x), tanh(x), coth(x), sech(x), csch(x)</td>
+				<td>Hyperbolic trigonometric functions</td>
+			</tr>
+		</table>
+		<table border="1">
+			<tr>
+				<th>Operator</th>
+				<th>Meaning</th>
+			</tr>
+			<tr>
+				<td>asinh(x), acosh(x), atanh(x), acoth(x), asech(x), acsch(x)</td>
+				<td>Reversed hyperbolic trigonometric functions</td>
+			</tr>
+			<tr>
+				<td>rad(x)</td>
+				<td>Floating-point number to radians function</td>
+			</tr>
+			<tr>
+				<td>deg(x)</td>
+				<td>Floating-point number to degrees function</td>
+			</tr>
+			<tr>
+				<td>max(x1, x2 ... xn)</td>
+				<td>Finds the biggest number</td>
+			</tr>
+			<tr>
+				<td>min(x1, x2 ... xn)</td>
+				<td>Finds the smallest number</td>
+			</tr>
+			<tr>
+				<td>abs(x)</td>
+				<td>Finds the absolute value of x</td>
+			</tr>
+			<tr>
+				<td>log(x)</td>
+				<td>Finds the logarithm of x</td>
+			</tr>
+			<tr>
+				<td>log(x)</td>
+				<td>Finds the base-10 logarithm of x</td>
+			</tr>
+			<tr>
+				<td>round(x, precision)</td>
+				<td>Rounds a floating-point number with the given precision</td>
+			</tr>
+			<tr>
+				<td>floor(x)</td>
+				<td>Rounds x down</td>
+			</tr>
+			<tr>
+				<td>ceil(x)</td>
+				<td>Rounds x up</td>
+			</tr>
+			<tr>
+				<td>sqrt(x)</td>
+				<td>Finds the square root of a number</td>
+			</tr>
+			<tr>
+				<td>pi</td>
+				<td>Constant for pi</td>
+			</tr>
+			<tr>
+				<td>e</td>
+				<td>Constant for the euler number</td>
 			</tr>
 		</table>
 	</div>

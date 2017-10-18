@@ -1057,9 +1057,6 @@ public class Expression
 		variables.put("e", e);
 		variables.put("PI", PI);
 		variables.put("NULL", null);
-		variables.put("TRUE", BigDecimal.ONE);
-		variables.put("FALSE", BigDecimal.ZERO);
-
 	}
 
 	private void assertNotNull(BigDecimal v1)

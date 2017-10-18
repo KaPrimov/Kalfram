@@ -74,3 +74,26 @@ div#error {
 div#error h1 {
 	margin: 5px 0;
 }
+
+div.tables-container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+div.tables-container table {
+	border: 1px solid black;
+}
+
+div.tables-container h2 {
+	width: 100%;
+	display: block;
+	margin-top: 5px;
+}
+
+@media all and (max-width: 1155px) {
+	table {
+		margin-bottom: 10px;
+	}
+}
