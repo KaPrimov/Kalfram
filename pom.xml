@@ -122,6 +122,12 @@
 			<version>1.0.0.Final</version>
 		</dependency>
 		<dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		    <version>3.1.0</version>
+		    <scope>provided</scope>
+		</dependency>
+		<dependency>
 			<groupId>wsdl4j</groupId>
 			<artifactId>wsdl4j</artifactId>
 			<version>1.6.2</version>
@@ -256,6 +262,11 @@
 			<artifactId>jboss-ejb3-tx2-spi</artifactId>
 			<version>2.0.0-beta-2</version>
 		</dependency>
+		<dependency>
+			<groupId>com.heroku.sdk</groupId>
+			<artifactId>heroku-maven-plugin</artifactId>
+			<version>1.2.1</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
@@ -266,6 +277,7 @@
 				<configuration>
 					<source>1.6</source>
 					<target>1.6</target>
+					<appName>kalfram-beta</appName>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -310,6 +322,11 @@
 						</configuration>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.heroku.sdk</groupId>
+				<artifactId>heroku-maven-plugin</artifactId>
+				<version>1.2.1</version>
 			</plugin>
 		</plugins>
 	</build>
