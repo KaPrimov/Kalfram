@@ -26,7 +26,7 @@
 	<div id='result-div'>
 		<c:choose>
 			<c:when test="${not empty result}">
-				<h1>The result is: ${result}</h1>
+				<h1>${result}</h1>
 			</c:when>
 		</c:choose>
 	</div>
@@ -128,7 +128,7 @@
 				<td>Finds the logarithm of x</td>
 			</tr>
 			<tr>
-				<td>log(x)</td>
+				<td>log10(x)</td>
 				<td>Finds the base-10 logarithm of x</td>
 			</tr>
 			<tr>
@@ -157,5 +157,6 @@
 			</tr>
 		</table>
 	</div>
+	<p style="color: #F36F21">* All trigonometric functions take as input <strong>radians</strong>.</p>
 </body>
 </html>

@@ -1,6 +1,7 @@
 package com.logic;
 
 import java.io.IOException;
+
 import java.math.BigDecimal;
 
 import javax.servlet.RequestDispatcher;
@@ -53,7 +54,8 @@ public class Calculate extends HttpServlet
 		try 
 		{
 			result =  expression.eval();
-			request.setAttribute("result", result.toPlainString());
+			String output = String.format("%s  = %s", input.trim().replaceAll("[^,()\\w+\\d+\\+\\-*^%\\/]\\s+", ""), result.toPlainString());
+			request.setAttribute("result", output);
 			requestDispatcher.forward(request, response);
 		} 
 		catch(ArithmeticException ae) 

@@ -6,6 +6,11 @@
         <servlet-name>Calculate</servlet-name>
         <servlet-class>com.logic.Calculate</servlet-class>
     </servlet>
+    <error-page>
+	   <error-code>404</error-code>
+	   <location>/pages/404Error.html</location>
+	</error-page>
+
  
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
